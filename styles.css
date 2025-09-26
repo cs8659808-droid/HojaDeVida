@@ -1,0 +1,97 @@
+/* estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #4e1a1a8c;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(105, 21, 83);
+}
+
+/* encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+}
+
+h1 {
+    color: #6a1515;
+    margin: 10px 0;
+}
+
+/* secciones */
+.section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ffffff;
+}
+
+h2 {
+    color: #830d0d;
+    font-size: 1.3em;
+}
+
+h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* listas */
+ul {
+    padding-left: 20px;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills li {
+    background: #b71c1c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/*Estilos para el botòn de imprimir */
+.print-button-container{
+    text-align:center;
+    margin: 28px 0;
+}
+.print-button {
+    background-color: #411111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.print-button:hover{
+   background-color: #ff3d3d;
+}
+/*Estilos para impresion */
+@media print {
+    .print-button-container{
+        display: none;
+    }
+}
